@@ -26,17 +26,37 @@
 
 ## 3. Exploratory Data Analysis
 ### 3.1. Univariate Analysis
-![Univariate Analysis](image/Univariate%20Analysis%20Numerical.png)
+#### 3.1.1. Numerical Features 
+![Univariate Analysis Numerical Features](image/Univariate%20Analysis%20Numerical.png)
 #### Observation:
 - The **more time spent** on the site or the internet, the **less likely** a customer will click on an ad.
 - The **older** the customer, the **more likely** a customer will click on an ad.
 - The **higher** area income of customer, the **less likely** a customer will click on an ad.
-  
-![Univariate Analysis](image/Univariate%20Analysis%20Categorical.png)
+
+#### 3.1.2. Categorical Features 
+![Univariate Analysis Categorical Features](image/Univariate%20Analysis%20Categorical.png)
 #### Observation:
 - **Perempuan** (female) has a slightly higher probability of **clicking** on Ad than Laki-laki (male).
 - Each ad category has a fairly similar click ratio with the **highest** ad category clicked being **Finance** and the **lowest** being **Bank**.
 - The city with the **highest** click ratio is **Serang** and the **lowest** is **Jakarta Pusat**.
 - The top 3 provinces with the **highest** click ratio are **Kalimantan Selatan**, **Banten**, **Sumatra Barat**.
+
 ### 3.2. Bivariate Analysis
+![Bivariate Analysis](image/Bivariate%20Analysis.png)
+#### Observation:
+- Age with Daily Time Spent on Site or Daily Internet Usage have a **negative correlation**. This means that the **older** the customer, the **less time** they spend on the site or the internet.
+- Meanwhile, Daily Time Spent on Site and Daily Internet Usage have a **positive correlation**. This means that the **more time** spent on the internet, the **more time** will be spent on the site too.
+
+### 3.3. Multivariate Analysis
+#### 3.3.1. Pearson Correlation
+![Multivariate Analysis](image/Multivariate%20Analysis%20Pearson%20Correlation.png)
+#### Observation:
+- Based on the heatmap above, there are **no features** that are **redundant** or have high correlation (>= 0.7) between them. Therefore, all features can be used for modeling. However, by using Pearson correlation, we cannot determine the relationship between features and the target variable because the **target variable is categorical data**. Therefore, we will use **PPS (Predictive Power Score)** to calculate the relationship between features and the target variable.
+
+#### 3.3.2. Predictive Power Score
+![Multivariate Analysis](image/Multivariate%20Analysis%20Predictive%20Power%20ScoreCorrelation.png)
+#### Observation:
+- Based on the heatmap above, the features that are **related** to the target variable (Clicked on Ad) and will be used for modeling are **Age**, **Area Income**, **Daily Internet Usage**, and **Daily Time Spent on Site** because they have **correlation >= 0.05** with the target variable.
+
+
 
