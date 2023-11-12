@@ -26,7 +26,7 @@
 
 ## 3. Exploratory Data Analysis
 ### 3.1. Univariate Analysis
-![Univariate Analysis](image/Univariate%20Analysis.png)
+![Univariate Analysis](image/Univariate%20Analysis%20Numerical.png)
 #### Observation:
 - The **more time spent** on the site or the internet, the **less likely** a customer will click on an ad.
 - The **older** the customer, the **more likely** a customer will click on an ad.
