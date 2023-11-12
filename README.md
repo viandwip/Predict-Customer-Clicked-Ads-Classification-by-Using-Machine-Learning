@@ -1,6 +1,10 @@
 # Predict Customer Clicked Ads Classification by Using Machine Learning
 
-## 1. Data Description
+## 1. Goals & Objectives
+Sebuah perusahaan di Indonesia ingin mengetahui efektifitas sebuah iklan yang mereka tayangkan, hal ini penting bagi perusahaan agar dapat mengetahui seberapa besar ketercapaian iklan yang dipasarkan sehingga dapat menarik customers untuk melihat iklan.
+Dengan mengolah data historical advertisement serta menemukan insight serta pola yang terjadi, maka dapat membantu perusahaan dalam menentukan target marketing, fokus case ini adalah membuat model machine learning classification yang berfungsi menentukan target customers yang tepat.
+
+## 2. Data Description
 | Feature | Description | Type | 
 | :- | :- | :- |
 | Unnamed: 0 | ID Customers| Numeric | 
@@ -15,5 +19,6 @@
 | province | Province of the costumers. | Categorical | 
 | category | Category of the advertisement. | Categorical |
 
-## 2. Exploratory Data Analysis
-
+## 3. Exploratory Data Analysis
+### 3.1. Univariate Analysis
+![Univariate Analysis](image/Univariate%20Analysis.png)
