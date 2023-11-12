@@ -31,5 +31,12 @@
 - The **more time spent** on the site or the internet, the **less likely** a customer will click on an ad.
 - The **older** the customer, the **more likely** a customer will click on an ad.
 - The **higher** area income of customer, the **less likely** a customer will click on an ad.
-
+  
+![Univariate Analysis](image/Univariate%20Analysis%20Categorical.png)
+#### Observation:
+- **Perempuan** (female) has a slightly higher probability of **clicking** on Ad than Laki-laki (male).
+- Each ad category has a fairly similar click ratio with the **highest** ad category clicked being **Finance** and the **lowest** being **Bank**.
+- The city with the **highest** click ratio is **Serang** and the **lowest** is **Jakarta Pusat**.
+- The top 3 provinces with the **highest** click ratio are **Kalimantan Selatan**, **Banten**, **Sumatra Barat**.
 ### 3.2. Bivariate Analysis
+
