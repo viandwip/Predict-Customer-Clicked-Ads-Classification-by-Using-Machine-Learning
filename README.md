@@ -16,3 +16,4 @@
 | category | Category of the advertisement. | Categorical |
 
 ## 2. Exploratory Data Analysis
+
