@@ -49,14 +49,23 @@
 
 ### 3.3. Multivariate Analysis
 #### 3.3.1. Pearson Correlation
-![Multivariate Analysis](image/Multivariate%20Analysis%20Pearson%20Correlation.png)
-#### Observation:
-- Based on the heatmap above, there are **no features** that are **redundant** or have high correlation (>= 0.7) between them. Therefore, all features can be used for modeling. However, by using Pearson correlation, we cannot determine the relationship between features and the target variable because the **target variable is categorical data**. Therefore, we will use **PPS (Predictive Power Score)** to calculate the relationship between features and the target variable.
+![Multivariate Analysis Pearson Correlation](image/Multivariate%20Analysis%20Pearson%20Correlation.png)
+#### Observation:<br>
+Based on the heatmap above, there are **no features** that are **redundant** or have high correlation (>= 0.7) between them. Therefore, all features can be used for modeling. However, by using Pearson correlation, we cannot determine the relationship between features and the target variable because the **target variable is categorical data**. Therefore, we will use **PPS (Predictive Power Score)** to calculate the relationship between features and the target variable.
 
 #### 3.3.2. Predictive Power Score
-![Multivariate Analysis](image/Multivariate%20Analysis%20Predictive%20Power%20ScoreCorrelation.png)
-#### Observation:
-- Based on the heatmap above, the features that are **related** to the target variable (Clicked on Ad) and will be used for modeling are **Age**, **Area Income**, **Daily Internet Usage**, and **Daily Time Spent on Site** because they have **correlation >= 0.05** with the target variable.
+![Multivariate Analysis Predictive Power Score](image/Multivariate%20Analysis%20Predictive%20Power%20Score.png)
+#### Observation:<br>
+Based on the heatmap above, the features that are **related** to the target variable (Clicked on Ad) and will be used for modeling are **Age**, **Area Income**, **Daily Internet Usage**, and **Daily Time Spent on Site** because they have **correlation >= 0.05** with the target variable.
+
+## 4. Data Preprocessing
+- Impute null values in the **Area Income** column with **median** because it has a **skewed** distribution and **Daily Internet Usage** and **Daily Time Spent on Site** columns with **mean** because they have almost **symmetric** distributions.
+- Dataset **does not have** duplicated data.
+- Encode the target variable (Clicked on Ad) to numerical data, 'No': 0 and 'Yes': 1.
+- Split the data into 70:30 proportions, 70% for training and 30% for testing.
+- Handle outliers in the training data.
+
+
 
 
 
