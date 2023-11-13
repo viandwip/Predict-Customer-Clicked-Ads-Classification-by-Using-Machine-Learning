@@ -59,11 +59,17 @@ Based on the heatmap above, there are **no features** that are **redundant** or 
 Based on the heatmap above, the features that are **related** to the target variable (Clicked on Ad) and will be used for modeling are **Age**, **Area Income**, **Daily Internet Usage**, and **Daily Time Spent on Site** because they have **correlation >= 0.05** with the target variable.
 
 ## 4. Data Preprocessing
-- Impute null values in the **Area Income** column with **median** because it has a **skewed** distribution and **Daily Internet Usage** and **Daily Time Spent on Site** columns with **mean** because they have almost **symmetric** distributions.
+- **Impute** null values in the **Area Income** column with **median** because it has a **skewed** distribution and **Daily Internet Usage** and **Daily Time Spent on Site** columns with **mean** because they have almost **symmetric** distributions.
 - Dataset **does not have** duplicated data.
-- Encode the target variable (Clicked on Ad) to numerical data, 'No': 0 and 'Yes': 1.
-- Split the data into 70:30 proportions, 70% for training and 30% for testing.
-- Handle outliers in the training data.
+- **Encode** the target variable (Clicked on Ad) to **numerical data**, 'No': 0 and 'Yes': 1.
+- Split the data into 70:30 proportions, **70% for training** and **30% for testing**.
+- Handle **outliers** for the **Area Income** column in the training data.
+- Conduct **normalization** process for the features used in the training and testing data.
+
+## 5. Modeling
+### 5.1. Before Normalization
+### 5.2. After Normalization
+
 
 
 
