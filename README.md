@@ -71,6 +71,10 @@ The primary metrics that will be used is **accuracy**, because the dataset has *
 ### 5.1. Before Normalization
 ![Result Before Normalization](images/Result Before Normalization)
 ### 5.2. After Normalization
+![Result After Normalization](images/Result After Normalization)
+### 5.3. Model Comparison
+![Model Comparison](images/Model Comparison)
+### 5.4. 
 
 
 
