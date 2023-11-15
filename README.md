@@ -56,7 +56,7 @@ Based on the heatmap above, there are **no features** that are **redundant** or 
 #### 3.3.2. Predictive Power Score
 ![Multivariate Analysis Predictive Power Score](image/Multivariate%20Analysis%20Predictive%20Power%20Score.png)
 #### Observation:<br>
-Based on the heatmap above, the features that are **related** to the target variable (Clicked on Ad) and will be used for modeling are **Age**, **Area Income**, **Daily Internet Usage**, and **Daily Time Spent on Site** because they have **correlation >= 0.05** with the target variable.
+Based on the heatmap above, the features that are **related** to the target variable (Clicked on Ad) and will be used for modeling are **Age**, **Area Income**, **Daily Internet Usage**, and **Daily Time Spent on Site** because they have **predictive power score >= 0.05** with the target variable.
 
 ## 4. Data Preprocessing
 - **Impute** null values in the **Area Income** column with **median** because it has a **skewed** distribution and **Daily Internet Usage** and **Daily Time Spent on Site** columns with **mean** because they have almost **symmetric** distributions.
