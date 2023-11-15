@@ -67,7 +67,9 @@ Based on the heatmap above, the features that are **related** to the target vari
 - Conduct **normalization** process for the features used in the training and testing data.
 
 ## 5. Modeling
+The primary metrics that will be used is **accuracy**, because the dataset has **balanced number of labels**.
 ### 5.1. Before Normalization
+![Result Before Normalization](images/Result Before Normalization)
 ### 5.2. After Normalization
 
 
