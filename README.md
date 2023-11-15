@@ -77,7 +77,7 @@ The primary metrics that will be used is **accuracy**, because the dataset has *
 | 4 | AdaBoost | 0.943333 |	0.941935 | 0.948052 |	2.004584 |
 | 5 | XGBoost	| 0.940000	| 0.947368	| 0.935065	| 11219.605488 |
 | 6 | KNNeighbors	| 0.680000	| 0.750000	| 0.564935	|1389.589961 |
-| 7 | Logistic | Regression	| 0.616667	| 0.574713	| 0.974026	| 7.244295 |
+| 7 | Logistic Regression	| 0.616667	| 0.574713	| 0.974026	| 7.244295 |
 
 #### Observation:
 - **Tree-based** models have **far better performance** than **distance-based** models.
