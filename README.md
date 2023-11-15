@@ -119,12 +119,67 @@ The primary metrics that will be used is **accuracy**, because the dataset has *
 
 ### 5.4. Confusion Matrix
 ![Confusion Matrix](image/Confusion%20Matrix.png)
+
 By using the results of *hyperparameter tuning* for the decision tree model, we train the model again to get a **confusion matrix** as shown above, with the following results:
 
 - **True Positive**: Predicted to click on the ad and it turned out to be correct 144 times
 - **True Negative**: Predicted not to click on the ad and it turned out to be correct 142 times
 - **False Positive**: Predicted to click on the ad and turned out to be wrong by 4 times
 - **False Negative**: Predicted not to click on the ad and turned out to be wrong 10 times
+
+### 5.5. Feature Importances
+![Feature Importances](image/Feature%20Importances.png)
+
+## 6. Business Recommendation & Simulation
+### 6.1. Business Recommendation
+Based on the **insight from EDA** and **feature importances**, we can provide business recommendations such as:
+****
+- **Content Optimization**<br>
+Because the higher **Daily Time Spent on Site** and **Daily Internet Usage** the less likely user will click on ads, then we need create ad contents that are **engaging** and **relevant** to the target user and ensure that the messaging and visuals of the ads **align with the interests and needs** of the user.<br>
+
+- **Targeted Pricing Strategies**<br>
+Because the **lower** Area Income the **more likely** user will click on ads, we can implement targeted pricing strategies that **align with the income levels** of the target audience. This may involve creating **special pricing tiers**, **discounts**, or **bundled offerings**. Consider developing and promoting **affordable products** or **services** for the users with low area income.<br>
+
+- **Age-Targeted Marketing Campaigns**<br>
+Because the **older** the user the **more likely** user will click on ads, then we can develop targeted marketing campaigns specifically designed to resonate with **older demographics**. We can create the messages, visuals, and offers to align with the **preferences** and **interests** of older users.
+
+### 6.2. Business Simulation
+**Assumption:**
+
+Cost per Mille (CPM) = Rp.100,000
+
+Revenue per Ad Clicked  = Rp.2000
+****
+
+**Before Using Machine Learning Model:**
+
+- **Number of Users Advertised**:<br>
+User = 1,000
+- **Click-Through Rate (CTR)**: <br>
+500/1,000 = 0.5
+- **Total Cost**: <br>
+CPM = Rp.100,000
+- **Total Revenue**: <br>
+CTR x Number of Users Advertised x Revenue per Ad Clicked = 0.5 x 1,000 x 2,000 = Rp.1,000,000
+- **Total Profit**:<br>
+Total Revenue - Total Cost = **Rp.900,000**
+****
+
+**After Using Machine Learning Model:**
+
+- **Number of Users Advertised**:<br>
+User = 1,000
+- **Click-Through Rate (CTR)**: <br>
+Precision = 0.95
+- **Total Cost**: <br>
+CPM = Rp.100,000
+- **Total Revenue**: <br>
+CTR x Number of Users Advertised x Revenue per Ad Clicked = 0.95 x 1,000 x 2,000 = Rp.1,900,000
+- **Total Profit**:<br>
+Total Revenue - Total Cost = **Rp.1,800,000**
+****
+
+From the results above, it can be seen that after we used the machine learning model **Click-Through Rate (CTR)** increased 45% from **50% to 95%** and **total profit** increased 100% from **Rp.900 ,000** to **Rp.1,800,000**.
 
 
 
