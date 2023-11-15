@@ -69,11 +69,37 @@ Based on the heatmap above, the features that are **related** to the target vari
 ## 5. Modeling
 The primary metrics that will be used is **accuracy**, because the dataset has **balanced number of labels**.
 ### 5.1. Before Normalization
-![Result Before Normalization](image/Result%20Before%20Normalization.png)
+| Model | Acc | Prec | Recall
+| :- | :- | :- | :- |
+
 ### 5.2. After Normalization
-![Result After Normalization](image/Result%20After%20Normalization.png)
+| Feature | Description | Type | 
+| :- | :- | :- |
+| Unnamed: 0 | ID Customers| Numeric | 
+| Daily Time Spent on a Site | Time spent by the customers on a site in minutes. | Numeric | 
+| Age  | Customer's age in years. | Numeric | 
+| Area Income  | Average income of geographical area of costumers. | Numeric | 
+| Daily Internet Usage | Time spent by customers on the internet in one day in minutes. | Numeric | 
+| Male | Whether or not a constumer was male. | Categorical | 
+| Timestamp | What time customers clicked on an Ad or the closed window. | Categorical | 
+| Clicked on Ad  | 'No' or 'Yes' is indicated clicking on an Ad. | Categorical | 
+| city | City of the costumers. | Categorical | 
+| province | Province of the costumers. | Categorical | 
+| category | Category of the advertisement. | Categorical |
 ### 5.3. Model Comparison
-![Model Comparison](image/Model%20Comparison.png)
+| Feature | Description | Type | 
+| :- | :- | :- |
+| Unnamed: 0 | ID Customers| Numeric | 
+| Daily Time Spent on a Site | Time spent by the customers on a site in minutes. | Numeric | 
+| Age  | Customer's age in years. | Numeric | 
+| Area Income  | Average income of geographical area of costumers. | Numeric | 
+| Daily Internet Usage | Time spent by customers on the internet in one day in minutes. | Numeric | 
+| Male | Whether or not a constumer was male. | Categorical | 
+| Timestamp | What time customers clicked on an Ad or the closed window. | Categorical | 
+| Clicked on Ad  | 'No' or 'Yes' is indicated clicking on an Ad. | Categorical | 
+| city | City of the costumers. | Categorical | 
+| province | Province of the costumers. | Categorical | 
+| category | Category of the advertisement. | Categorical |
 ### 5.4. 
 
 
