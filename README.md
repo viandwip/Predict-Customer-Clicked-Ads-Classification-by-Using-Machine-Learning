@@ -69,11 +69,11 @@ Based on the heatmap above, the features that are **related** to the target vari
 ## 5. Modeling
 The primary metrics that will be used is **accuracy**, because the dataset has **balanced number of labels**.
 ### 5.1. Before Normalization
-![Result Before Normalization](images/Result%20Before%20Normalization)
+![Result Before Normalization](images/Result%20Before%20Normalization.png)
 ### 5.2. After Normalization
-![Result After Normalization](images/Result%20After%20Normalization)
+![Result After Normalization](images/Result%20After%20Normalization.png)
 ### 5.3. Model Comparison
-![Model Comparison](images/Model%20Comparison)
+![Model Comparison](images/Model%20Comparison.png)
 ### 5.4. 
 
 
