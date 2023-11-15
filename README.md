@@ -69,38 +69,62 @@ Based on the heatmap above, the features that are **related** to the target vari
 ## 5. Modeling
 The primary metrics that will be used is **accuracy**, because the dataset has **balanced number of labels**.
 ### 5.1. Before Normalization
-| Model | Acc | Prec | Recall
-| :- | :- | :- | :- |
+| No | Model | Acc | Prec | Recall | Time Elapsed |
+| :- | :- | :- | :- | :- | :- |
+| 1 | Decision Tree | 0.953333 | 0.972973 | 0.935065 | 0.599740 |
+| 2 | Random Forest |	0.953333 |	0.954545 |	0.954545 | 43946.556562 |
+| 3 | Extra Trees | 0.953333	| 0.979452 | 0.928571	| 37221.365716 |
+| 4 | AdaBoost | 0.943333 |	0.941935 | 0.948052 |	2.004584 |
+| 5 | XGBoost	| 0.940000	| 0.947368	| 0.935065	| 11219.605488 |
+| 6 | KNNeighbors	| 0.680000	| 0.750000	| 0.564935	|1389.589961 |
+| 7 | Logistic | Regression	| 0.616667	| 0.574713	| 0.974026	| 7.244295 |
+
+#### Observation:
+- **Tree-based** models have **far better performance** than **distance-based** models.
+- The **best** performance models are **Decision Tree**, **Random Forest**, and **Extra Trees** with the highest accuracy.
+- The **worst** performance models are **KNNeigbors** and **Logistic Regression** with the lowest accuracy.
+- The **longest** time elapsed occured on **Random Forest**, **Extra Trees** and **XGBoost** models.
 
 ### 5.2. After Normalization
-| Feature | Description | Type | 
-| :- | :- | :- |
-| Unnamed: 0 | ID Customers| Numeric | 
-| Daily Time Spent on a Site | Time spent by the customers on a site in minutes. | Numeric | 
-| Age  | Customer's age in years. | Numeric | 
-| Area Income  | Average income of geographical area of costumers. | Numeric | 
-| Daily Internet Usage | Time spent by customers on the internet in one day in minutes. | Numeric | 
-| Male | Whether or not a constumer was male. | Categorical | 
-| Timestamp | What time customers clicked on an Ad or the closed window. | Categorical | 
-| Clicked on Ad  | 'No' or 'Yes' is indicated clicking on an Ad. | Categorical | 
-| city | City of the costumers. | Categorical | 
-| province | Province of the costumers. | Categorical | 
-| category | Category of the advertisement. | Categorical |
+| No | Model | Acc (Normalized) | Prec (Normalized) | Recall (Normalized) | Time Elapsed (Normalized) |
+| :- | :- | :- | :- | :- | :- |
+| 1	| KNNeighbors	| 0.956667	| 0.986207	| 0.928571	| 1154.110018 |
+| 2	| Decision Tree |	0.953333	| 0.972973	| 0.935065	| 0.270079 |
+| 3	| Random Forest	| 0.953333	| 0.954545	| 0.954545	| 42926.467355 |
+| 4	| Extra Trees	| 0.953333	| 0.979452	| 0.928571	| 39691.231115 |
+| 5	| AdaBoost	| 0.943333	| 0.941935	| 0.948052	| 1.777168 |
+| 6	| XGBoost	| 0.940000	| 0.947368	| 0.935065	| 10764.285743 |
+| 7 |	Logistic Regression	| 0.926667	| 1.000000	| 0.857143	| 0.189288 |
+
+#### Observation
+- After the dataset was **normalized**, there was a **significant change** in the performance of the **distance-based** models.
+- The **best** performance model changes to **KNNeighbors model**. 
+- The **worst** performance model still **Logistic Regression** although its performance increase significantly.
+- The **longest** time elapsed still occured on **Random Forest**, **Extra Trees** and **XGBoost** models.
+
 ### 5.3. Model Comparison
-| Feature | Description | Type | 
-| :- | :- | :- |
-| Unnamed: 0 | ID Customers| Numeric | 
-| Daily Time Spent on a Site | Time spent by the customers on a site in minutes. | Numeric | 
-| Age  | Customer's age in years. | Numeric | 
-| Area Income  | Average income of geographical area of costumers. | Numeric | 
-| Daily Internet Usage | Time spent by customers on the internet in one day in minutes. | Numeric | 
-| Male | Whether or not a constumer was male. | Categorical | 
-| Timestamp | What time customers clicked on an Ad or the closed window. | Categorical | 
-| Clicked on Ad  | 'No' or 'Yes' is indicated clicking on an Ad. | Categorical | 
-| city | City of the costumers. | Categorical | 
-| province | Province of the costumers. | Categorical | 
-| category | Category of the advertisement. | Categorical |
-### 5.4. 
+| No | Model |	Acc| Acc (Norm) |	Δ Acc|	Prec |	Prec (Norm) |	Δ Prec|	Recall |	Recall (Norm) |	Δ Recall |	Time Elapsed |	Time Elapsed (Norm) |	Δ Time Elapsed |
+| :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
+| 1 | KNNeighbors	| 0.680000	| 0.956667	| 0.276667	| 0.750000	| 0.986207	| 0.236207	| 0.564935	| 0.928571	| 0.363636	| 1389.589961	| 1154.110018	| -235.479943 |
+| 2	| Decision Tree	| 0.953333	| 0.953333	| 0.000000	| 0.972973	| 0.972973	| 0.000000	| 0.935065	| 0.935065	| 0.000000	| 0.599740	| 0.270079 | -0.329662 |
+| 3	| Random Forest	| 0.953333	| 0.953333	| 0.000000	| 0.954545	| 0.954545	| 0.000000	| 0.954545	| 0.954545	| 0.000000	| 43946.556562 |	42926.467355 |	-1020.089206 |
+| 4	| Extra Trees	| 0.953333	| 0.953333	| 0.000000	| 0.979452	| 0.979452	| 0.000000	| 0.928571	| 0.928571	| 0.000000	| 37221.365716 | 39691.231115	| 2469.865398 |
+| 5	| AdaBoost	| 0.943333	| 0.943333	| 0.000000	| 0.941935	| 0.941935	| 0.000000	| 0.948052	| 0.948052	| 0.000000	| 2.004584	| 1.777168	| -0.227415 |
+| 6	| XGBoost	| 0.940000	| 0.940000	| 0.000000	| 0.947368	| 0.947368	| 0.000000	| 0.935065	| 0.935065	| 0.000000	| 11219.605488	| 10764.285743	| -455.319745 |
+| 7	| Logistic Regression	| 0.616667	| 0.926667	| 0.310000	| 0.574713	| 1.000000	| 0.425287	| 0.974026	| 0.857143	| -0.116883	| 7.244295	| 0.189288	| -7.055007 |
+
+#### Observation:
+- Overall, all models **perform better** after the dataset **normalized** based on the metrics evaluation and also the time elapsed.
+- The chosen model is **Decision Tree** model because it has one of the **highest accuracy** and the **fastest computation process**.
+
+### 5.4. Confusion Matrix
+![Confusion Matrix](image/Confusion%20Matrix.png)
+By using the results of *hyperparameter tuning* for the decision tree model, we train the model again to get a **confusion matrix** as shown above, with the following results:
+
+- **True Positive**: Predicted to click on the ad and it turned out to be correct 144 times
+- **True Negative**: Predicted not to click on the ad and it turned out to be correct 142 times
+- **False Positive**: Predicted to click on the ad and turned out to be wrong by 4 times
+- **False Negative**: Predicted not to click on the ad and turned out to be wrong 10 times
 
 
 
