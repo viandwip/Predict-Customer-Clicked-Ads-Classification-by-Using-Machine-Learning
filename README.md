@@ -130,6 +130,8 @@ By using the results of *hyperparameter tuning* for the decision tree model, we 
 ### 5.5. Feature Importances
 ![Feature Importances](image/Feature%20Importances.png)
 
+Based on the feature importances in the image above, we can see that **Daily Time Spent on Site** is the most important feature, followed by the **Daily Internet Usage** feature in second place which determine whether users click on ads or not.
+
 ## 6. Business Recommendation & Simulation
 ### 6.1. Business Recommendation
 Based on the **insight from EDA** and **feature importances**, we can provide business recommendations such as:
