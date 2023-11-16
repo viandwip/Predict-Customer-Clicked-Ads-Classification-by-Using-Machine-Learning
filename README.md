@@ -151,7 +151,7 @@ Because the **older** the user the **more likely** user will click on ads, then 
 
 Cost per Mille (CPM) = Rp.100,000
 
-Revenue per Ad Clicked  = Rp.2000
+Revenue per Ad Clicked  = Rp.2,000
 ****
 
 **Before Using Machine Learning Model:**
@@ -184,7 +184,7 @@ Total Revenue - Total Cost = **Rp.1,800,000**
 
 **Conclusion:**<br>
 
-From the results above, it can be seen that after we used the machine learning model **Click-Through Rate (CTR)** increased 45% from **50% to 95%** and **total profit** increased 100% from **Rp.900,000** to **Rp.1,800,000**.
+From the results above, it can be seen that after we used the machine learning model, the ad performance increased. **Click-Through Rate (CTR)** increased 45% from **50% to 95%** and **total profit** increased 100% from **Rp.900,000** to **Rp.1,800,000**.
 
 
 
