@@ -182,6 +182,8 @@ CTR x Number of Users Advertised x Revenue per Ad Clicked = 0.95 x 1,000 x 2,000
 Total Revenue - Total Cost = **Rp.1,800,000**
 ****
 
+**Conclusion:**<br>
+
 From the results above, it can be seen that after we used the machine learning model **Click-Through Rate (CTR)** increased 45% from **50% to 95%** and **total profit** increased 100% from **Rp.900,000** to **Rp.1,800,000**.
 
 
