@@ -1,6 +1,6 @@
 # Predict Customer Clicked Ads Classification by Using Machine Learning
 
-## Background 
+## Project Background 
 A company in Indonesia wants to know the effectiveness of the advertisement they broadcast. This is important for the company to know how successful the advertisement being marketed is so that it can attract customers to see the advertisement.
 
 By analyzing the historical advertisement data and finding insights and patterns that occur, it can help companies determine marketing targets. The focus of this case is to create a machine learning classification model that can be used to determine the right target customers.
