@@ -118,10 +118,10 @@ The primary metrics that will be used is **accuracy**, because the dataset has *
 - The chosen model is **Decision Tree** model because it has one of the **highest accuracy** and the **fastest computation process**.
 
 ### 5.4. Confusion Matrix
-![Confusion Matrix](image/Confusion%20Matrix.png)
-
+<p align="center"><img src="image/Confusion Matrix.png" alt="Confusion Matrix" style="width: 60%></p>
+  
+###
 By using the results of *hyperparameter tuning* for the decision tree model, we train the model again to get a **confusion matrix** as shown above, with the following results:
-
 - **True Positive**: Predicted to click on the ad and it turned out to be correct 144 times
 - **True Negative**: Predicted not to click on the ad and it turned out to be correct 142 times
 - **False Positive**: Predicted to click on the ad and turned out to be wrong by 4 times
