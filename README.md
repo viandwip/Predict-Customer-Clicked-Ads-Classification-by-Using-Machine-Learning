@@ -49,7 +49,7 @@
 
 ### 3.3. Multivariate Analysis
 #### 3.3.1. Pearson Correlation
-![Multivariate Analysis Pearson Correlation](imagea/Multivariate%20Analysis%20Pearson%20Correlation.png)
+![Multivariate Analysis Pearson Correlation](images/Multivariate%20Analysis%20Pearson%20Correlation.png)
 #### Observation:<br>
 Based on the heatmap above, there are **no features** that are **redundant** or have high correlation (>= 0.7) between them. Therefore, all features can be used for modeling. However, by using Pearson correlation, we cannot determine the relationship between features and the target variable because the **target variable is categorical data**. Therefore, we will use **PPS (Predictive Power Score)** to calculate the relationship between features and the target variable.
 
