@@ -27,14 +27,14 @@
 ## 3. Exploratory Data Analysis
 ### 3.1. Univariate Analysis
 #### 3.1.1. Numerical Features 
-![Univariate Analysis Numerical Features](image/Univariate%20Analysis%20Numerical.png)
+![Univariate Analysis Numerical Features](images/Univariate%20Analysis%20Numerical.png)
 #### Observation:
 - The **more time spent** on the site or the internet, the **less likely** a customer will click on an ad.
 - The **older** the customer, the **more likely** a customer will click on an ad.
 - The **higher** area income of customer, the **less likely** a customer will click on an ad.
 
 #### 3.1.2. Categorical Features 
-![Univariate Analysis Categorical Features](image/Univariate%20Analysis%20Categorical.png)
+![Univariate Analysis Categorical Features](images/Univariate%20Analysis%20Categorical.png)
 #### Observation:
 - **Perempuan** (female) has a slightly higher probability of **clicking** on Ad than Laki-laki (male).
 - Each ad category has a fairly similar click ratio with the **highest** ad category clicked being **Finance** and the **lowest** being **Bank**.
@@ -42,19 +42,19 @@
 - The top 3 provinces with the **highest** click ratio are **Kalimantan Selatan**, **Banten**, **Sumatra Barat**.
 
 ### 3.2. Bivariate Analysis
-![Bivariate Analysis](image/Bivariate%20Analysis.png)
+![Bivariate Analysis](images/Bivariate%20Analysis.png)
 #### Observation:
 - Age with Daily Time Spent on Site or Daily Internet Usage have a **negative correlation**. This means that the **older** the customer, the **less time** they spend on the site or the internet.
 - Meanwhile, Daily Time Spent on Site and Daily Internet Usage have a **positive correlation**. This means that the **more time** spent on the internet, the **more time** will be spent on the site too.
 
 ### 3.3. Multivariate Analysis
 #### 3.3.1. Pearson Correlation
-![Multivariate Analysis Pearson Correlation](image/Multivariate%20Analysis%20Pearson%20Correlation.png)
+![Multivariate Analysis Pearson Correlation](imagea/Multivariate%20Analysis%20Pearson%20Correlation.png)
 #### Observation:<br>
 Based on the heatmap above, there are **no features** that are **redundant** or have high correlation (>= 0.7) between them. Therefore, all features can be used for modeling. However, by using Pearson correlation, we cannot determine the relationship between features and the target variable because the **target variable is categorical data**. Therefore, we will use **PPS (Predictive Power Score)** to calculate the relationship between features and the target variable.
 
 #### 3.3.2. Predictive Power Score
-![Multivariate Analysis Predictive Power Score](image/Multivariate%20Analysis%20Predictive%20Power%20Score.png)
+![Multivariate Analysis Predictive Power Score](images/Multivariate%20Analysis%20Predictive%20Power%20Score.png)
 #### Observation:<br>
 Based on the heatmap above, the features that are **related** to the target variable (Clicked on Ad) and will be used for modeling are **Age**, **Area Income**, **Daily Internet Usage**, and **Daily Time Spent on Site** because they have **predictive power score >= 0.05** with the target variable.
 
@@ -118,7 +118,7 @@ The primary metrics that will be used is **accuracy**, because the dataset has *
 - The chosen model is **Decision Tree** model because it has one of the **highest accuracy** and the **fastest computation process**.
 
 ### 5.4. Confusion Matrix
-<p align="center"><img src="image/Confusion Matrix.png" alt="Confusion Matrix" width = 70%></p>
+<p align="center"><img src="images/Confusion Matrix.png" alt="Confusion Matrix" width = 70%></p>
   
 ###
 By using the results of *hyperparameter tuning* for the decision tree model, we train the model again to get a **confusion matrix** as shown above, with the following results:
@@ -128,7 +128,7 @@ By using the results of *hyperparameter tuning* for the decision tree model, we 
 - **False Negative**: Predicted not to click on the ad and turned out to be wrong 10 times
 
 ### 5.5. Feature Importances
-![Feature Importances](image/Feature%20Importances.png)
+![Feature Importances](images/Feature%20Importances.png)
 
 Based on the feature importances in the image above, we can see that **Daily Time Spent on Site** is the most important feature, followed by the **Daily Internet Usage** feature in second place which determine whether **users click on ads or not**.
 
